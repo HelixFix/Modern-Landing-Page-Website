@@ -55,5 +55,27 @@ p {
 
     // Le taille du titre s'adapte à la taille de l'écran
     font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
-    line-height: 1.1;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.section-title {
+
+}
+
+.hero {
+    color: white;
+    text-align: center;
+    padding: 15em 0;
+    background: #222;
+
+    //https://caniuse.com/css-backgroundblendmode
+    @supports (background-blend-mode: multiply) {
+        background: 
+        url(../img/shoe-3.png),
+        radial-gradient(#444, #111); // Background color effect
+        background-blend-mode: multiply  // Ajoute un filtre au background
+    }
+    
+    // background-size: 10%;
 }
