@@ -49,3 +49,11 @@ p {
     opacity: .9;
 
 }
+
+.primary-title {
+    font-size: 4rem;
+
+    // Le taille du titre s'adapte à la taille de l'écran
+    font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+    line-height: 1.1;
+}
