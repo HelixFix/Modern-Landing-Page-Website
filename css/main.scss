@@ -28,6 +28,11 @@ p {
     margin: 0 auto;
 }
 
+// /  *+* cible les deux tags frère qui suivent mais pas l'aîné -> https://www.alsacreations.com/article/lire/1312-selectionner-les-freres-d-un-element-en-css-nth-child.html
+.spacing > * + * {
+    margin-top: var(--spacer, 2rem);
+}
+
 .btn {
     display: inline-block;
     text-decoration: none;
